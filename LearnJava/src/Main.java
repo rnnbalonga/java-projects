@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Sum is: " + sum);
         // Print sum as currency of some sort
         System.out.println("$" + sum);
+
     }
 }
 
