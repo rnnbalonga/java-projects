@@ -8,6 +8,8 @@ public class Main {
 
         int sum = int_1 + int_2 + int_3 + int_4;
         System.out.println("Sum is: " + sum);
+        // Print sum as currency of some sort
+        System.out.println("$" + sum);
     }
 }
 
