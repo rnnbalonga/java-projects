@@ -16,9 +16,13 @@ public class NumberGuessingGame {
         System.out.println("My Number: " + randNumber);
         System.out.println("This is the number guessing game.");
 
-        int userNumber = getUserNumber();
 
+        boolean result = false;
 
+        while (result == false){
+            int userNumber = getUserNumber();
+            result = evaluateGuess(userNumber, randNumber);
+        }
         //Set number of tries user can guess
         int userTries = 0;
 
