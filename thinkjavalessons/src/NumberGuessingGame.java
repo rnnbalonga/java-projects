@@ -13,13 +13,15 @@ public class NumberGuessingGame {
 
         //Randomize number
         int randNumber = rand.nextInt((maxNumber - minNumber) + minNumber);
+        System.out.println("My Number: " + randNumber);
         System.out.println("This is the number guessing game.");
 
         int userNumber = getUserNumber();
 
+
         //Set number of tries user can guess
         int userTries = 0;
-        System.out.println("My Number: " + randNumber);
+
     }
 
     public static int getUserNumber(){
@@ -28,6 +30,16 @@ public class NumberGuessingGame {
         System.out.print("Please select a number from 1-100: ");
         userNumber = in.nextInt();
         return userNumber;
+    }
+
+    public static boolean evaluateGuess(int userNumber, int randNumber) {
+        if (userNumber == randNumber){
+            System.out.println("Congratulations!");
+            return true;
+        } else {
+            System.out.println("BATSU DESU");
+            return false;
+        }
     }
 
 }
