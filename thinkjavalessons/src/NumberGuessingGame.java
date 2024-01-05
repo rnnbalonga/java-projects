@@ -33,11 +33,19 @@ public class NumberGuessingGame {
     }
 
     public static boolean evaluateGuess(int userNumber, int randNumber) {
+        int numDifference = Math.abs(userNumber - randNumber);
+
         if (userNumber == randNumber){
             System.out.println("Congratulations!");
             return true;
+        } else if (numDifference <= 5){
+            System.out.println("You're SO SO SO SO SO Close");
+            return false;
+        } else if (numDifference > 5 && numDifference < 15) {
+            System.out.println("Try a little bit closer.");
+            return false;
         } else {
-            System.out.println("BATSU DESU");
+            System.out.println("TOO FAR BRO");
             return false;
         }
     }
