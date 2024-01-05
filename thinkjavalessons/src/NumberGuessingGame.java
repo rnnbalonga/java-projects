@@ -18,8 +18,8 @@ public class NumberGuessingGame {
         int userNumber = getUserNumber();
 
         //Set number of tries user can guess
-        int userTries = 5;
-        int numDifference = Math.abs(userNumber - randNumber);
+        int userTries = 0;
+        System.out.println("My Number: " + randNumber);
     }
 
     public static int getUserNumber(){
@@ -30,7 +30,4 @@ public class NumberGuessingGame {
         return userNumber;
     }
 
-    public static int getDifference(int randNum, int userNum){
-        return Math.abs(userNum - randNum);
-    }
 }
