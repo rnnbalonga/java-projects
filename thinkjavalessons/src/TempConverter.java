@@ -7,7 +7,7 @@ public class TempConverter {
         //Capture user input as a double instead of an int
         double userTemp = (double) in.nextInt();
         double convertedTemp = (userTemp * 9 / 5) + 32;
-        System.out.println();
+
         System.out.println(userTemp + "C = " + convertedTemp + " F");
     }
 
