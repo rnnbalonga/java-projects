@@ -33,6 +33,7 @@ public class NumberGuessingGame {
         int userNumber;
         System.out.print("Please select a number from 1-100: ");
         userNumber = in.nextInt();
+        //Create a way to make sure that a user provides a valid guess.
         return userNumber;
     }
 
